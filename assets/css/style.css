@@ -1,6 +1,7 @@
 body{
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "museo-sans", Helvetica, Arial, sans-serif;
   font-size: 22px;
+  font-weight: 100;
   line-height: 1.5;
 }
 
@@ -14,35 +15,43 @@ article, header, nav, section {
 ================================ */
 
 .wrap{
-  margin: 60px auto;
-  max-width: 1200px;
+  margin: 15px auto; /* margin: 60px auto; */
+  max-width: 650px; /* max-width: 1200px; */
   overflow: hidden;
   width: 90%;
 }
 
+/*
 .primary-header{
   float: right;
-  width: 30%
+  width: 30%;
 }
+*/
 
+/*
 .content{
   float: left;
   width: 65%;
 }
+*/
 
 @media only screen and (max-width: 1085px){
   body{
     font-size: 16px;
   }
 
+/*
   .wrap{
     margin: 15px auto;
   }
+*/
 
+/*
   .primary-header,  .content{
     float: none;
     width: auto;
   }
+*/
 
 }
 
@@ -50,7 +59,7 @@ article, header, nav, section {
 ================================ */
 
 a{
-  color: #0091e5;
+  color: #00B8E3; /* color: #0091e5; */
   text-decoration: none;
 }
 
@@ -60,7 +69,7 @@ a{
   font-size: 0.85em;
 }
 
-.site-title{ font-size: 1.2em; }
+.site-title{ font-size: 1.2em; font-weight: normal; }
 
 .page-menu {
   margin: 0 0 30px;
@@ -82,9 +91,11 @@ a{
 /* Content */
 
 .content-title{
-  font-size: 2.4em;
-  line-height: 1.3;
-  margin: 0 0 0.5em;
+  font-size: 0em; /* font-size: 2.4em; */
+  margin: 0; /* margin: 0 0 0.25em; */
+  text-indent: 100%;
+  white-space: nowrap;
+	overflow: hidden;
 }
 
 .post-preview{

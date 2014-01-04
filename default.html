@@ -6,6 +6,17 @@
   <title>{{site.title}} | {{title}}</title>
   <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'rag8cja',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
 </head>
 <body>
 
@@ -26,6 +37,9 @@
     <section class="content">
 
       <h1 class="content-title">{{title}}</h1>
+
+      <img src="/assets/img/header_lrg.png" alt="Jack of trades, master of some"/>
+      <img src="/assets/img/Jack_web_final.png" alt="Jack of trades, master of some"/>
 
       {% if pages %}
         {% comment %} Show subpages if there are any available {% endcomment %}
