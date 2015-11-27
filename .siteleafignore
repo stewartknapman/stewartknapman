@@ -1,7 +1,0 @@
-.*
-README*
-Gemfile*
-config.ru
-bower.json
-bower_components/*
-assets/scss/*
