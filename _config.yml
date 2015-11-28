@@ -6,9 +6,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-  awards:
-    title: awards
-    output: true
 defaults:
 - scope:
     path: ''
