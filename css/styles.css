@@ -246,27 +246,49 @@ body:after {
       content: 'xl'; } }
 
 .wrapper {
-  max-width: 38em;
   margin: auto; }
+  .page-header .wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    overflow: visible; }
+    @media (min-width: 37.5em) {
+      .page-header .wrapper {
+        width: 95%; } }
+    @media (min-width: 60em) {
+      .page-header .wrapper {
+        width: 90%; } }
+    @media (min-width: 75em) {
+      .page-header .wrapper {
+        width: 85%; } }
+    @media (min-width: 93.75em) {
+      .page-header .wrapper {
+        width: 80%; } }
+  .page-content .wrapper {
+    max-width: 38em; }
 
-.page-header {
+.page-hero {
   padding-top: 2rem;
   padding-bottom: 1rem;
   font-size: 1.25em;
   text-align: center; }
-  .page-header:after {
+  .page-hero:after {
     content: "";
     display: table;
     clear: both; }
   @media (min-width: 37.5em) {
-    .page-header {
+    .page-hero {
       font-size: 1.5em; } }
   @media (min-width: 60em) {
-    .page-header {
+    .page-hero {
       font-size: 2em; } }
   @media (min-width: 75em) {
-    .page-header {
+    .page-hero {
       font-size: 2.5em; } }
-  .page-header p {
+  .page-hero p {
     font-size: 0.8125em; }
+
+.page-subtitle {
+  font-size: 0.8125em;
+  line-height: 1.6; }
 

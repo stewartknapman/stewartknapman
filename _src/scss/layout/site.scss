@@ -1,4 +1,10 @@
 .wrapper {
-  @include reading-length;
   margin: auto;
+  
+  .page-header & {
+    @include container;
+  }
+  .page-content & {
+    @include reading-length;
+  }
 }
