@@ -126,7 +126,7 @@ hr {
 body {
   font-size: 100%;
   line-height: 1.5;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #333;
   -webkit-transition: font-size 0.3s;
@@ -138,12 +138,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "baskerville-urw", Georgia, "Times New Roman", Times, serif;
   font-weight: 500; }
 
 h1 {
   font-size: 2.5em;
-  line-height: 1.1; }
+  line-height: 1.15; }
 
 h2 {
   font-size: 2em;
@@ -177,6 +177,9 @@ article article h1, article aside h1, article nav h1, article section h1, aside 
 blockquote {
   border-left: #eee 4px solid;
   padding-left: 1em; }
+
+strong {
+  font-weight: 600; }
 
 a {
   color: inherit;
@@ -245,32 +248,58 @@ body:after {
     body:after {
       content: 'xl'; } }
 
+body {
+  -webkit-font-feature-settings: "onum", "liga";
+          font-feature-settings: "onum", "liga"; }
+
+strong {
+  font-weight: 600; }
+
+.caps {
+  font-variant: small-caps;
+  -webkit-font-feature-settings: "c2sc", "smcp", "onum";
+          font-feature-settings: "c2sc", "smcp", "onum"; }
+
 .wrapper {
   margin: auto; }
-  .page-header .wrapper {
+  .page-header .wrapper,
+  .page-content .wrapper {
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
+    width: 98%;
     overflow: visible; }
     @media (min-width: 37.5em) {
-      .page-header .wrapper {
+      .page-header .wrapper,
+      .page-content .wrapper {
         width: 95%; } }
     @media (min-width: 60em) {
-      .page-header .wrapper {
+      .page-header .wrapper,
+      .page-content .wrapper {
         width: 90%; } }
     @media (min-width: 75em) {
-      .page-header .wrapper {
+      .page-header .wrapper,
+      .page-content .wrapper {
         width: 85%; } }
     @media (min-width: 93.75em) {
-      .page-header .wrapper {
+      .page-header .wrapper,
+      .page-content .wrapper {
         width: 80%; } }
-  .page-content .wrapper {
-    max-width: 38em; }
+
+.page-header,
+.page-content {
+  margin-bottom: 2rem; }
+
+.reading-length {
+  max-width: 38em;
+  margin: auto; }
 
 .page-hero {
   padding-top: 2rem;
   padding-bottom: 1rem;
   font-size: 1.25em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: center; }
   .page-hero:after {
     content: "";
@@ -289,6 +318,19 @@ body:after {
     font-size: 0.8125em; }
 
 .page-subtitle {
-  font-size: 0.8125em;
-  line-height: 1.6; }
+  font-size: 1em;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 400; }
+
+body {
+  background-color: #f2fdff;
+  color: #003c4a; }
+
+.page-header {
+  overflow: hidden;
+  /*
+  color: lighten($highlight_color, 53%);
+  background-color: $highlight_color;
+*/ }
 

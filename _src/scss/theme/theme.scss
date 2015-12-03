@@ -1,0 +1,12 @@
+body {
+  background-color: lighten($highlight_color, 53%);
+  color: darken($highlight_color, 30%);
+}
+
+.page-header {
+  overflow: hidden;
+/*
+  color: lighten($highlight_color, 53%);
+  background-color: $highlight_color;
+*/
+}

@@ -1,8 +1,13 @@
 .page-hero {
   @include hero-block;
+  margin-top: $gutter_horizontal;
+  margin-bottom: $gutter_horizontal;
   text-align: center;
 }
 
 .page-subtitle {
-  @include font-size-xs;
+//   @include font-size-xs;
+  @include font-size-sm;
+  font-style: italic;
+  font-weight: 400;
 }

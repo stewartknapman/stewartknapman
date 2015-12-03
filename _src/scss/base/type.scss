@@ -1,0 +1,12 @@
+body {
+  font-feature-settings: "onum", "liga";
+}
+
+strong {
+  font-weight: 600;
+}
+
+.caps {
+  font-variant: small-caps;
+  font-feature-settings: "c2sc", "smcp", "onum";
+}

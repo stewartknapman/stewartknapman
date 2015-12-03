@@ -1,10 +1,18 @@
 .wrapper {
   margin: auto;
   
-  .page-header & {
+  .page-header &,
+  .page-content & {
     @include container;
   }
-  .page-content & {
-    @include reading-length;
-  }
+}
+
+.page-header,
+.page-content {
+  margin-bottom: $gutter_horizontal * 2;
+}
+
+.reading-length {
+  @include reading-length;
+  margin: auto;
 }
