@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Stewart Knapman
 date: 2015-11-28 03:19:00 Z
 layout: basic
 ---
