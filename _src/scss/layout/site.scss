@@ -12,6 +12,10 @@
   margin-bottom: $gutter_horizontal * 2;
 }
 
+.page-header {
+  text-align: center;
+}
+
 .reading-length {
   @include reading-length;
   margin: auto;

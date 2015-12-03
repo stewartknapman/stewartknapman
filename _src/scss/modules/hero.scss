@@ -1,8 +1,7 @@
 .page-hero {
   @include hero-block;
-  margin-top: $gutter_horizontal;
-  margin-bottom: $gutter_horizontal;
-  text-align: center;
+  margin: $gutter_horizontal auto;
+  max-width: $max_reading_length / 2;
 }
 
 .page-subtitle {

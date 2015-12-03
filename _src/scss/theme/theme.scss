@@ -1,4 +1,8 @@
-body {
+#application-for-webstock-16-scholarship {
   background-color: lighten($highlight_color, 54.5%);
   color: darken($highlight_color, 31%);
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font_family_serif;
+  }
 }
