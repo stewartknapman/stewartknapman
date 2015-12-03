@@ -26,5 +26,5 @@ I know that if given this opportunity to attend a Webstock conference it will no
 
 Thank you for taking the time to consider my application.
 
-Yours sincerely,
-Stewart Knapman.
+Yours sincerely,<br>
+**Stewart Knapman**.
