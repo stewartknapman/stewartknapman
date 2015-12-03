@@ -1,0 +1,43 @@
+{
+  "name": "stewartknapman",
+  "version": "1.0.0",
+  "description": "Personal website built with [Siteleaf v2](http://www.siteleaf.com)",
+  "main": "index.html",
+  "scripts": {
+    "jekyll": "jekyll build",
+    "jekyll:watch": "jekyll build --watch",
+    "scripts": "browserify ./_src/js/app.js > ./js/app.js",
+    "scripts:watch": "watch 'npm run scripts' ./_src/js/",
+    "postscripts": "uglifyjs ./js/app.js -c -m > ./js/app.min.js",
+    "styles": "node-sass ./_src/scss/styles.scss | postcss --use autoprefixer -o ./css/styles.css",
+    "styles:watch": "watch 'npm run styles' ./_src/scss/",
+    "poststyles": "cssmin ./css/styles.css > ./css/styles.min.css",
+    "sync": "browser-sync start --server '_site' --files './_site'",
+    "watch": "parallelshell 'npm run jekyll:watch' 'npm run scripts:watch' 'npm run styles:watch'",
+    "build": "parallelshell 'npm run watch' 'npm run sync'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stewartknapman/stewartknapman.git"
+  },
+  "author": "@stewartknapman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stewartknapman/stewartknapman/issues"
+  },
+  "homepage": "https://github.com/stewartknapman/stewartknapman#readme",
+  "dependencies": {
+    "inside": "git+https://github.com/stewartknapman/inside.git#v2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "browser-sync": "^2.10.0",
+    "browserify": "^12.0.1",
+    "cssmin": "^0.4.3",
+    "node-sass": "^3.4.2",
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.3.2",
+    "uglify-js": "^2.6.1",
+    "watch": "^0.16.0"
+  }
+}
