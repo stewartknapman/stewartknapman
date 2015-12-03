@@ -3,9 +3,6 @@ title: stewartknapman
 url: http://stewartknapman.siteleaf.net
 timezone: UTC
 collections:
-  docs:
-    title: Docs
-    output: true
   uploads:
     title: Uploads
     output: true
