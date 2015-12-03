@@ -245,7 +245,7 @@ body:after {
     body:after {
       content: 'xl'; } }
 
-.page-content {
+.wrapper {
   max-width: 38em;
   margin: auto; }
 
