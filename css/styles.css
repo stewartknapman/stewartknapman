@@ -1504,3 +1504,25 @@ dl.list-inline dt {
   .hero-block p {
     font-size: 0.8125em; }
 
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  overflow: visible; }
+  @media (min-width: 37.5em) {
+    .wrapper {
+      width: 95%; } }
+  @media (min-width: 60em) {
+    .wrapper {
+      width: 90%; } }
+  @media (min-width: 75em) {
+    .wrapper {
+      width: 85%; } }
+  @media (min-width: 93.75em) {
+    .wrapper {
+      width: 80%; } }
+
+.page-content {
+  max-width: 40em;
+  margin: auto; }
+
