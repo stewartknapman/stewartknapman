@@ -1,6 +1,7 @@
 ---
 title: Application for Webstock 16 Scholarship
 date: 2015-12-03 08:24:00 Z
+layout: basic
 ---
 
 On my desk sits several books. Among them is On Web Typography by Jason Santa Maria and You're My Favorite Client by Mike Montiero—I had given my copy of Design Is A Job to my Dad. Next to my bed sits Web Form Design by Luke Wroblewski. Before that it was Frank Chamiero's The Shape of Design.
