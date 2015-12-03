@@ -2,16 +2,22 @@
 layout: default
 ---
 
+{% comment %}
+  
+  ** NOT IN USE **
+  
+{% endcomment %}
+
 {% assign home = site.pages | where: 'title', 'Home' | first %}
 
 <article class="page">
 
   <header class="page-header">
-    <h1 class="page-title">{{ site.title }}</h1>
+    <h1 class="page-title">{{ site.title | improve }}</h1>
   </header>
 
   <div class="page-content">
-    {{ home.content }}
+    {{ home.content | improve }}
   </div>
 
 </article>
