@@ -324,13 +324,6 @@ strong {
   font-weight: 400; }
 
 body {
-  background-color: #f2fdff;
-  color: #003c4a; }
-
-.page-header {
-  overflow: hidden;
-  /*
-  color: lighten($highlight_color, 53%);
-  background-color: $highlight_color;
-*/ }
+  background-color: #fafeff;
+  color: #003845; }
 
