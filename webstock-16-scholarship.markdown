@@ -1,6 +1,7 @@
 ---
 title: Application for Webstock 16 Scholarship
 date: 2015-12-03 08:24:00 Z
+subtitle: "— Stewart Knapman"
 layout: basic
 ---
 
