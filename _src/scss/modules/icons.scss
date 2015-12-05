@@ -1,0 +1,19 @@
+.icon-list {
+  @include list-inline;
+  text-align: center;
+}
+.icon-link {
+  background: none;
+  
+  path {
+    transition: $transition_duration_hover;
+    fill: $text_color;
+  }
+  
+  &:hover {
+    background: none;
+    path {
+      fill: $link_color_hover;
+    }
+  }
+}

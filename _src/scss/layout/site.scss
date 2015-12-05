@@ -1,10 +1,6 @@
 .wrapper {
+  @include container;
   margin: auto;
-  
-  .page-header &,
-  .page-content & {
-    @include container;
-  }
 }
 
 .page-header,
