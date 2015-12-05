@@ -343,10 +343,6 @@ strong {
   max-width: 38em;
   margin: auto; }
 
-#home a {
-  display: inline-block;
-  background-position: 0 1.1em; }
-
 #home .page-header-banner {
   margin-top: 2rem; }
 
