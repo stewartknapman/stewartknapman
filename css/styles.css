@@ -33,6 +33,10 @@
   ---
 */
 /*
+  Borders
+  ---
+*/
+/*
   Misc
   ---
 */
@@ -247,6 +251,29 @@ figure img {
 figcaption {
   overflow: auto; }
 
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  text-align: left; }
+  @media (min-width: 37.5em) {
+    table td, table th {
+      padding: 0.5rem 0.5em; } }
+  @media (max-width: 37.5em) {
+    table table {
+      display: block; }
+    table thead {
+      display: none; }
+    table tbody, table tfoot, table tr, table td, table th {
+      display: block; }
+    table tr {
+      padding: 0.5rem 0.5em; }
+    table td:before {
+      content: attr(title);
+      display: inline-block;
+      margin-right: 2%;
+      font-weight: 600; } }
+
 /*
   Pass media queries to JS: https://adactio.com/journal/5429
   We do this so we are using one consitant source for this value.
@@ -321,6 +348,22 @@ strong {
 .reading-length {
   max-width: 38em;
   margin: auto; }
+
+#home a {
+  display: inline-block;
+  background-position: 0 1.1em; }
+
+#home .page-header-banner {
+  margin-top: 2rem; }
+
+#home .page-header-banner,
+#home .reading-length {
+  width: 90%;
+  max-width: 30em; }
+  @media (min-width: 28em) {
+    #home .page-header-banner,
+    #home .reading-length {
+      width: 80%; } }
 
 .page-hero {
   padding-top: 2rem;

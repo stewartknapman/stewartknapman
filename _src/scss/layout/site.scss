@@ -20,3 +20,24 @@
   @include reading-length;
   margin: auto;
 }
+
+#home {
+  // Fix orphans in a
+  a {
+    display: inline-block;
+    background-position: 0 1.1em;
+  }
+  
+  .page-header-banner {
+    margin-top: $gutter_horizontal * 2;
+  }
+  
+  .page-header-banner,
+  .reading-length {
+    width: 90%;
+    max-width: 30em;
+    @media (min-width: 28em) {
+      width: 80%;
+    }
+  }
+}
