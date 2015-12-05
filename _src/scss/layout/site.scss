@@ -15,6 +15,10 @@
 .reading-length {
   @include reading-length;
   margin: auto;
+  
+  #home & {
+    max-width: 30em;
+  }
 }
 
 #home {
@@ -22,12 +26,8 @@
     margin-top: $gutter_horizontal * 2;
   }
   
-  .page-header-banner,
-  .reading-length {
-    width: 90%;
+  .page-header-banner {
+    width: 100%;
     max-width: 30em;
-    @media (min-width: 28em) {
-      width: 80%;
-    }
   }
 }

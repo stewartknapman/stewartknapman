@@ -316,12 +316,12 @@ strong {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  width: 98%;
+  width: 90%;
   overflow: visible;
   margin: auto; }
   @media (min-width: 37.5em) {
     .wrapper {
-      width: 95%; } }
+      width: 90%; } }
   @media (min-width: 60em) {
     .wrapper {
       width: 90%; } }
@@ -342,18 +342,15 @@ strong {
 .reading-length {
   max-width: 38em;
   margin: auto; }
+  #home .reading-length {
+    max-width: 30em; }
 
 #home .page-header-banner {
   margin-top: 2rem; }
 
-#home .page-header-banner,
-#home .reading-length {
-  width: 90%;
+#home .page-header-banner {
+  width: 100%;
   max-width: 30em; }
-  @media (min-width: 28em) {
-    #home .page-header-banner,
-    #home .reading-length {
-      width: 80%; } }
 
 .page-hero {
   padding-top: 2rem;
@@ -392,7 +389,10 @@ strong {
     vertical-align: middle; }
 
 .icon-link {
+  display: block;
   background: none; }
+  .icon-link svg {
+    vertical-align: middle; }
   .icon-link path {
     -webkit-transition: 0.3s;
     transition: 0.3s;

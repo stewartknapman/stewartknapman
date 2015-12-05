@@ -3,7 +3,12 @@
   text-align: center;
 }
 .icon-link {
+  display: block;
   background: none;
+  
+  svg {
+    vertical-align: middle;
+  }
   
   path {
     transition: $transition_duration_hover;
